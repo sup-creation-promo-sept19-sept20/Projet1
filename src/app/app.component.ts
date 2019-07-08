@@ -15,5 +15,19 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     this.authService.watchFirebaseConnectionState();
     this.authService.init();
+    //this.getTest()
   }
+/*
+  getTest (){
+
+    return this.afs.collection<>('laMeute_projet1').valueChanges()
+      .pipe(
+        //tap(users=> this.users=users),
+        //tap(x=>console.log(x)),
+      )
+  }
+
+ */
 }
+
+
