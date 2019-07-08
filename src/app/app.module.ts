@@ -11,10 +11,14 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 import { MatSnackBarModule } from '@angular/material';
+import { CreateRoomComponent } from './create-room/create-room.component';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CreateRoomComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -25,10 +29,12 @@ import { MatSnackBarModule } from '@angular/material';
     AngularFireAuthModule,
     AngularFireStorageModule,
     AuthModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule {
+
 }
